@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+body,
+html {
+    background-color: #FFF;
+    height: 100vh;
+    font-family: 'Spartan', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    width: 80%;
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e";
+
+    gap: 2rem;
+
+    margin: 2rem 2rem;
+}
+
+.grid-items-1 {
+    grid-area: a;
+    text-align: center;
+}
+
+.grid-items-1 h1 {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    inline-size: 300px;
+    overflow-wrap: break-word;
+    margin: 1rem auto;
+}
+
+.sub-heading {
+
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    overflow-wrap: break-word;
+    padding: 0 1rem;
+}
+
+/* .rating section  */
+.rating {
+    background-color: hsl(300, 24%, 96%);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem auto;
+    width: 70%;
+}
+
+.star {
+    display: flex;
+    justify-content: center;
+}
+
+.star img {
+    margin: 0 0.3rem;
+}
+
+.rating-text {
+    color: hsl(300, 43%, 22%);
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.grid-items-3,
+.grid-items-4,
+.grid-items-5 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 80%;
+    background-color: hsl(300, 43%, 22%);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.profile,
+.name {
+    display: inline-block;
+}
+
+.profile {
+    border-radius: 100%;
+    width: 15%;
+    margin-right: 1rem;
+}
+
+.name h2 {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 0.2rem;
+}
+
+.name span {
+    color: hsl(333, 80%, 67%);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.comment {
+    color: hsl(300, 24%, 96%);
+    font-size: 15px;
+    overflow-wrap: break-word;
+    margin: 0 auto;
+}
+
+.grid-items-2 {
+    grid-area: b;
+}
+
+.grid-items-3 {
+    grid-area: c;
+}
+
+.grid-items-4 {
+    grid-area: d;
+}
+
+.grid-items-5 {
+    grid-area: e;
+}
+
+
+@media (min-width:950px) {
+    .grid-container {
+        grid-template-areas:
+            "a a a b b b"
+            "c c d d e e";
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1.5fr 1fr;
+    }
+
+    .grid-items-1 h1 {
+        text-align: left;
+        margin: 0;
+    }
+
+    .sub-heading {
+        padding: 0;
+        text-align: left;
+        inline-size: 480px;
+        overflow-wrap: break-word;
+    }
+
+    .grid-items-2 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .rating {
+        padding: 0.5rem;
+    }
+
+    .rating-2 {
+        margin-left: 1rem;
+    }
+
+    .rating-3 {
+        margin-left: 9rem;
+    }
+
+    .card-2 {
+        margin-top: 1.3rem;
+    }
+
+    .card-3 {
+        margin-top: 2.6rem;
+    }
+}
