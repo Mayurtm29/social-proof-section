@@ -59,7 +59,7 @@ main {
 /* .rating section  */
 .rating {
     background-color: hsl(300, 24%, 96%);
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: 8px;
     margin: 1rem auto;
     width: 70%;
