@@ -144,12 +144,16 @@ main {
 
 
 @media (min-width:950px) {
+    main{
+        height: 100vh;
+    }
     .grid-container {
+        align-items: center;
         grid-template-areas:
             "a a a b b b"
             "c c d d e e";
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 1.5fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
     .grid-items-1 h1 {
@@ -163,7 +167,14 @@ main {
         inline-size: 480px;
         overflow-wrap: break-word;
     }
-
+.star,.rating-text{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.star{
+    margin:0 1rem ;
+}
     .grid-items-2 {
         padding: 0;
         margin: 0;
@@ -182,10 +193,10 @@ main {
     }
 
     .card-2 {
-        margin-top: 1.3rem;
+        margin-top: 1.5rem;
     }
 
     .card-3 {
-        margin-top: 2.6rem;
+        margin-top: 3rem;
     }
 }
